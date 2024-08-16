@@ -1,1 +1,1 @@
-just show using next technologies: TS, JS, MUI, React Hook Form
+Example using next technologies: TS, JS, MUI, React Hook Form.
