@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-hookform/static/css/main.f7ce1395.css",
+    "main.css": "/react-hookform/static/css/main.539b2e5c.css",
     "main.js": "/react-hookform/static/js/main.e902ece7.js",
-    "static/media/pic.jpeg": "/react-hookform/static/media/pic.5f53c471109f1c743378.jpeg",
+    "static/media/pic1.jpg.webp": "/react-hookform/static/media/pic1.jpg.fc40b8cc9362998c8d72.webp",
     "static/media/roboto-latin-700-normal.woff2": "/react-hookform/static/media/roboto-latin-700-normal.4535474e1cf8598695ad.woff2",
     "static/media/roboto-latin-500-normal.woff2": "/react-hookform/static/media/roboto-latin-500-normal.7077203b1982951ecf76.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/react-hookform/static/media/roboto-latin-400-normal.297d48e1b5a10c0831a9.woff2",
@@ -60,11 +60,11 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/react-hookform/static/media/roboto-greek-ext-300-normal.b590dbe5c639944366d1.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/react-hookform/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/react-hookform/index.html",
-    "main.f7ce1395.css.map": "/react-hookform/static/css/main.f7ce1395.css.map",
+    "main.539b2e5c.css.map": "/react-hookform/static/css/main.539b2e5c.css.map",
     "main.e902ece7.js.map": "/react-hookform/static/js/main.e902ece7.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7ce1395.css",
+    "static/css/main.539b2e5c.css",
     "static/js/main.e902ece7.js"
   ]
 }
