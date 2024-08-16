@@ -1,16 +1,25 @@
 .auth-form {
+  height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .auth-form {
     width: 50vw;
-    height: 100vh;
-    background-color: #fff; 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+  }
 }
-.auth-form_subtitle{
-    color: rgb(193, 180, 186);
+.auth-form_subtitle {
+  color: rgb(193, 180, 186);
 }
-.auth-form_form{
-    max-width: 360px;
+.auth-form_form {
+  max-width: 360px;
+}
+.auth-form_alert {
+  margin-top: 20px;
+  max-width: 360px;
+  width: 100%;
 }

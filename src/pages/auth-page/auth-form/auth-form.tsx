@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import Textfield from "@mui/material/TextField";
+import Alert from "@mui/material/Alert";
 import Button from "@mui/material/Button";
+import CheckIcon from "@mui/icons-material/Check";
 import {
   useForm,
   SubmitHandler,
   Controller,
   useFormState,
 } from "react-hook-form";
-import "./auth-form.css";
 import { passwordValidation, loginValidation } from "./validation";
+import "./auth-form.css";
 
 interface ILoginForm {
   login: string;
@@ -17,11 +19,22 @@ interface ILoginForm {
 }
 
 const AuthForm: React.FC = () => {
-  const { handleSubmit, control } = useForm<ILoginForm>();
+  const [isAlertVisible, setAlertVisible] = useState<boolean>(false);
+  const { handleSubmit, control, reset } = useForm<ILoginForm>();
   const { errors } = useFormState({ control });
 
-  const onSubmit: SubmitHandler<ILoginForm> = (data) =>
+  const onSubmit: SubmitHandler<ILoginForm> = (data) => {
     console.log("onSubmit", data);
+    setAlertVisible(true);
+    // Clear form values after submission
+    reset({
+      login: "",
+      password: "",
+    });
+    setTimeout(() => {
+      setAlertVisible(false);
+    }, 2000)
+  };
 
   return (
     <div className="auth-form">
@@ -36,7 +49,6 @@ const AuthForm: React.FC = () => {
       >
         To get access
       </Typography>
-
       <form onSubmit={handleSubmit(onSubmit)} className="auth-form_form">
         <Controller
           control={control}
@@ -85,6 +97,11 @@ const AuthForm: React.FC = () => {
           Login
         </Button>
       </form>
+      {isAlertVisible && (
+        <Alert icon={<CheckIcon fontSize="inherit" />} severity="success" className="auth-form_alert">
+          Your submiting was successfull...
+        </Alert>
+      )}
     </div>
   );
 };
